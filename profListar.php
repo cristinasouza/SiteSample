@@ -62,7 +62,8 @@ Profa. Cristina V. P. B. Souza
 
             // Verifica conexão
             if (!$conn) {
-                die("Connection failed: " . mysqli_connect_error());
+                //die("Connection failed: " . mysqli_connect_error());
+				echo "Connection failed: " . mysqli_connect_error();
             }
 			// Configura para trabalhar com caracteres acentuados do português
 			mysqli_query($conn,"SET NAMES 'utf8'");
